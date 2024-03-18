@@ -70,7 +70,8 @@ nav
     font-weight:600;
     color:var(--logo-color)
 }
-.nav-menu,.nav-menu-list{
+.nav-menu,
+.nav-menu-list{
     display:flex;
     column-gap: -30px;
 }
