@@ -1,7 +1,7 @@
 function myMenuFunction(){
     var menuBtn = document.getElementById("mynavmenu");
     if(menuBtn.className === "nav-menu"){
-        menuBtn.className += "responsive";
+        menuBtn.className +="  responsive";
     }
     else{
         menuBtn.className="nav-menu";
@@ -17,11 +17,11 @@ toggleSwitch.addEventListener("click", () =>{
 });
 // Typing Effect
 var typingEffect = new Typed(".typedText",{
-    strings:["Designer","coder","Developer"],
+    strings:["Designer","Coder","Developer"],
     loop:true,
-    typedSpeed:500,
-    backSpeed:100,
-    backDelay:3000,
+    typeSpeed:100,
+    backSpeed:80,
+    backDelay:2000,
 })
 
 // Scroll animation
