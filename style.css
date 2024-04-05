@@ -70,6 +70,9 @@ nav
     font-weight:600;
     color:var(--logo-color)
 }
+.nav-name:hover{
+    text-shadow:6px -20px 3px #8749f2
+}
 .nav-menu,
 .nav-menu-list{
     display:flex;
@@ -357,6 +360,10 @@ i{
     background: #8749f2;
     transition: all 0.5s ease;
 }
+.about-info .about-me-btn:hover{
+    color: black;
+    background-color: beige;
+}
 /* Skill */
 .skills{
     position: relative;
@@ -514,6 +521,7 @@ i{
     box-shadow: 1px 8px 10px 2px var(--first-shadow);
     overflow: hidden;
     cursor: pointer;
+    font-size:20px;
 }
 .contact-info>h2{
     color:var(--text-color);
@@ -633,6 +641,10 @@ footer{
     justify-content: center;
     gap:30px;
     color:var(--color-white);
+    cursor: pointer;
+}
+.footer-social-icons a i:hover{
+    color:white;
 }
 .ficon i{
     font-size: 50px;
@@ -706,6 +718,7 @@ footer{
     }
     .social-icons{
         margin-top: 2em;
+
     }
 
     .featured-image{
