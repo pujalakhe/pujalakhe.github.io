@@ -34,20 +34,69 @@ export class AboutComponent {
 
   skillsList = [
     {
-      name: 'Web Design',
-      level: 80,
+      official_link: 'https://angular.io/',
+      logo: 'assets/skills/angular-removebg-preview.png',
+      name: 'angular',
     },
     {
-      name: 'Graphic Design',
-      level: 70,
+      official_link: 'https://www.typescriptlang.org/',
+      logo: 'assets/skills/typescript.png',
+      name: 'typescript',
     },
     {
-      name: 'Branding',
-      level: 90,
+      official_link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+      logo: 'assets/skills/js.png',
+      name: 'Javascript',
     },
     {
-      name: 'WordPress',
-      level: 50,
+      official_link: 'https://www.postman.com/',
+      logo: 'assets/skills/Postman.svg',
+      name: 'postman',
+    },
+    {
+      official_link: 'https://ionicframework.com/',
+      logo: 'assets/skills/ionic.png',
+      name: 'ionic',
+    },
+    {
+      official_link: 'https://www.postgresql.org/',
+      logo: 'assets/skills/postgres.png',
+      name: 'posgresql', // (small typo, correct spelling: "postgresql")
+    },
+    {
+      official_link: 'https://www.mysql.com/',
+      logo: 'assets/skills/mysql.png',
+      name: 'Mysql',
+    },
+    {
+      official_link: 'https://rubyonrails.org/',
+      logo: 'assets/skills/ror.png',
+      name: 'ruby-on-rails',
+    },
+    {
+      official_link: 'https://www.python.org/',
+      logo: 'assets/skills/python.png',
+      name: 'python',
+    },
+    {
+      official_link: 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+      logo: 'assets/skills/c-sharp.png',
+      name: 'C#',
+    },
+    {
+      official_link: 'https://www.java.com/',
+      logo: 'assets/skills/java.png',
+      name: 'Java',
+    },
+    {
+      official_link: 'https://expressjs.com/',
+      logo: 'assets/skills/node-express.png',
+      name: 'node-express',
+    },
+    {
+      official_link: 'https://kernel.org/',
+      logo: 'assets/skills/linux.png',
+      name: 'linux',
     },
   ];
 }

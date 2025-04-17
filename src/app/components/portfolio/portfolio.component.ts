@@ -13,52 +13,57 @@ export class PortfolioComponent {
   filters = ['All', 'Web design', 'Applications', 'Web development'];
   selectedFilter = 'All';
   selectBoxOpen = false;
+  baseUrl = 'https://github.com/pujalakhe/';
 
   projects = [
     {
-      title: 'Finance',
-      category: 'Web development',
-      image: 'assets/images/project-1.jpg',
+      title: 'Course Mate - A Course Recommendation System',
+      category: '',
+      image: 'assets/projects/coursemate.png',
+      preview_link: '',
+      repo_link: `${this.baseUrl}CourseRecom-Frontend-`,
     },
     {
-      title: 'Orizon',
-      category: 'Web development',
-      image: 'assets/images/project-2.png',
+      title: 'Angular Crud With JSON Server',
+      category: '',
+      image: 'assets/projects/json-crud.png',
+      preview_link: '',
+      repo_link: `${this.baseUrl}Angular-CRUD-with-JSON/`,
     },
     {
-      title: 'Fundo',
-      category: 'Web design',
-      image: 'assets/images/project-3.jpg',
+      title: 'Attendance Management System -Java.',
+      category: '',
+      image: 'assets/projects/attendence.png',
+      preview_link: '',
+      repo_link: `${this.baseUrl}Attendence-Management-System-Java`,
     },
     {
-      title: 'Brawlhalla',
-      category: 'Applications',
-      image: 'assets/images/project-4.png',
+      title: 'Mechanic App - Ionic with Angular',
+      category: '',
+      image: '',
+      preview_link: '',
+      repo_link: `${this.baseUrl}`,
     },
     {
-      title: 'DSM.',
-      category: 'Web design',
-      image: 'assets/images/project-5.png',
+      title: 'Crud Operation - Angular',
+      category: '',
+      image: 'assets/projects/angular-crud.png',
+      preview_link: '',
+      repo_link: `${this.baseUrl}Angular-CRUD`,
     },
     {
-      title: 'MetaSpark',
-      category: 'Web design',
-      image: 'assets/images/project-6.png',
+      title: 'OAuth-Angular',
+      category: '',
+      image: 'assets/projects/oauth.png',
+      preview_link: '',
+      repo_link: `${this.baseUrl}Angular-Google-Authentication/`,
     },
     {
-      title: 'Summary',
-      category: 'Web development',
-      image: 'assets/images/project-7.png',
-    },
-    {
-      title: 'Task Manager',
-      category: 'Applications',
-      image: 'assets/images/project-8.jpg',
-    },
-    {
-      title: 'Arrival',
-      category: 'Web development',
-      image: 'assets/images/project-9.png',
+      title: '',
+      category: '',
+      image: '',
+      preview_link: '',
+      repo_link: ``,
     },
   ];
 
@@ -75,5 +80,13 @@ export class PortfolioComponent {
 
   toggleSelectBox() {
     this.selectBoxOpen = !this.selectBoxOpen;
+  }
+  openRepo(event: Event, repoLink: string | undefined) {
+    event.preventDefault(); // stop the parent <a> from being triggered
+    window.open(repoLink, '_blank'); // open repo in new tab
+  }
+  openProjImages(event: Event, image: string | undefined) {
+    event.preventDefault(); // stop the parent <a> from being triggered
+    window.open(image, '_blank');
   }
 }
