@@ -38,14 +38,24 @@
         *ngFor="let project of filteredProjects"
         [attr.data-category]="project.category"
       >
-        <a href="#">
+        <a [href]="project.preview_link" targert="_blank">
           <figure class="project-img">
             <div class="project-item-icon-box">
               <ion-icon name="eye-outline"></ion-icon>
+              <ion-icon
+                name="logo-github"
+                (click)="openRepo($event, project.repo_link)"
+              >
+              </ion-icon>
             </div>
             <img [src]="project.image" [alt]="project.title" loading="lazy" />
           </figure>
-          <h3 class="project-title">{{ project.title }}</h3>
+          <h3
+            class="project-title"
+            (click)="openProjImages($event, project.image)"
+          >
+            {{ project.title }}
+          </h3>
           <p class="project-category">{{ project.category }}</p>
         </a>
       </li>

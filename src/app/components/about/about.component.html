@@ -35,19 +35,15 @@
       </li>
     </ul>
   </section>
-  <!-- Skills Section -->
-  <section class="skill">
-    <h3 class="h3 skills-title">Skills</h3>
-    <ul class="skills-list content-card">
-      <li class="skills-item" *ngFor="let skill of skillsList">
-        <div class="title-wrapper">
-          <h5 class="h5">{{ skill.name }}</h5>
-          <data value="{{ skill.level }}">{{ skill.level }}%</data>
-        </div>
 
-        <div class="skill-progress-bg">
-          <div class="skill-progress-fill" [style.width.%]="skill.level"></div>
-        </div>
+  <section class="clients">
+    <h3 class="h3 clients-title">Skills</h3>
+
+    <ul class="clients-list has-scrollbar">
+      <li class="clients-item" *ngFor="let skill of skillsList">
+        <a [href]="skill.official_link" target="_blank">
+          <img [src]="skill.logo" [alt]="skill.name" loading="lazy" />
+        </a>
       </li>
     </ul>
   </section>
