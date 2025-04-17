@@ -1,0 +1,47 @@
+<article class="resume active">
+  <header>
+    <h2 class="h2 article-title">Resume</h2>
+  </header>
+
+  <!-- Education Section -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Education</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item" *ngFor="let education of educationList">
+        <h4 class="h4 timeline-item-title">{{ education.school }}</h4>
+        <p class="timeline-text">{{ education.description }}</p>
+        <span>{{ education.period }}</span>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Experience</h3>
+    </div>
+
+    <ol class="timeline-list">
+      <li class="timeline-item" *ngFor="let experience of experienceList">
+        <h4 class="h4 timeline-item-title">{{ experience.role }}</h4>
+        <p class="timeline-text">{{ experience.company }}</p>
+        <span>{{ experience.period }}</span>
+
+        <p class="timeline-text">{{ experience.description }}</p>
+      </li>
+    </ol>
+  </section>
+  <button class="form-btn" type="button" (click)="downloadCV()">
+    <ion-icon name="document-text-outline"></ion-icon>
+    <span>Download CV</span>
+  </button>
+</article>

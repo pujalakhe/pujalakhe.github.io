@@ -1,0 +1,54 @@
+<article class="portfolio active" data-page="portfolio">
+  <header>
+    <h2 class="h2 article-title">Portfolio</h2>
+  </header>
+
+  <section class="projects">
+    <!-- <ul class="filter-list">
+      <li class="filter-item" *ngFor="let filter of filters">
+        <button
+          [class.active]="selectedFilter === filter"
+          (click)="selectFilter(filter)"
+        >
+          {{ filter }}
+        </button>
+      </li>
+    </ul> -->
+
+    <div class="filter-select-box">
+      <button class="filter-select" (click)="toggleSelectBox()">
+        <div class="select-value">
+          {{ selectedFilter || "Select category" }}
+        </div>
+        <div class="select-icon">
+          <ion-icon name="chevron-down"></ion-icon>
+        </div>
+      </button>
+
+      <ul class="select-list" *ngIf="selectBoxOpen">
+        <li class="select-item" *ngFor="let filter of filters">
+          <button (click)="selectFilter(filter)">{{ filter }}</button>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="project-list">
+      <li
+        class="project-item active"
+        *ngFor="let project of filteredProjects"
+        [attr.data-category]="project.category"
+      >
+        <a href="#">
+          <figure class="project-img">
+            <div class="project-item-icon-box">
+              <ion-icon name="eye-outline"></ion-icon>
+            </div>
+            <img [src]="project.image" [alt]="project.title" loading="lazy" />
+          </figure>
+          <h3 class="project-title">{{ project.title }}</h3>
+          <p class="project-category">{{ project.category }}</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+</article>

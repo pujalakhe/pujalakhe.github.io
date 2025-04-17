@@ -1,0 +1,91 @@
+<article class="contact active" data-page="contact">
+  <header>
+    <h2 class="h2 article-title">Contact</h2>
+  </header>
+
+  <!-- Map Section -->
+  <section class="mapbox">
+    <figure>
+      <iframe
+        [src]="mapUrl"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </figure>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form">
+    <h3 class="h3 form-title">Contact Form</h3>
+
+    <form
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmit()"
+      class="form"
+      data-form
+    >
+      <div class="input-wrapper">
+        <input
+          formControlName="fullname"
+          class="form-input"
+          placeholder="Full name"
+          required
+          data-form-input
+        />
+        <div
+          *ngIf="
+            contactForm.get('fullname')?.invalid &&
+            contactForm.get('fullname')?.touched
+          "
+        >
+          <small class="error"
+            >Full name is required (minimum 3 characters)</small
+          >
+        </div>
+
+        <input
+          formControlName="email"
+          type="email"
+          class="form-input"
+          placeholder="Email address"
+          required
+          data-form-input
+        />
+        <div
+          *ngIf="
+            contactForm.get('email')?.invalid &&
+            contactForm.get('email')?.touched
+          "
+        >
+          <small class="error">Valid email is required</small>
+        </div>
+      </div>
+
+      <textarea
+        formControlName="message"
+        class="form-input"
+        placeholder="Your Message"
+        required
+        data-form-input
+      ></textarea>
+      <div
+        *ngIf="
+          contactForm.get('message')?.invalid &&
+          contactForm.get('message')?.touched
+        "
+      >
+        <small class="error">Message is required (minimum 10 characters)</small>
+      </div>
+
+      <button class="form-btn" type="submit" [disabled]="contactForm.invalid">
+        <ion-icon name="paper-plane"></ion-icon>
+        <span>Send Message</span>
+      </button>
+    </form>
+  </section>
+</article>
