@@ -37,7 +37,7 @@ export class ResumeComponent {
     {
       role: 'Angular-developer-Freelancer',
       period: '2024 — Present',
-      description:''
+      description: '',
     },
   ];
 
