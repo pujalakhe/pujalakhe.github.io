@@ -50,7 +50,7 @@ export class AboutComponent {
     },
     {
       official_link: 'https://www.postman.com/',
-      logo: 'assets/skills/Postman.svg',
+      logo: 'assets/skills/postman.png',
       name: 'postman',
     },
     {
@@ -97,6 +97,12 @@ export class AboutComponent {
       official_link: 'https://kernel.org/',
       logo: 'assets/skills/linux.png',
       name: 'linux',
+    },
+
+    {
+      official_link: 'https://react.dev/',
+      logo: 'assets/skills/react.png',
+      name: 'react',
     },
   ];
 }
