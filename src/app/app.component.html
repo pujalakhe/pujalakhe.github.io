@@ -3,11 +3,11 @@
     <!--
       - #SIDEBAR
     -->
-    <aside class="sidebar"  [class.active]="showContacts">
+    <aside class="sidebar" [class.active]="showContacts">
       <div class="sidebar-info">
         <figure class="avatar-box">
           <img
-            src="assets/images/owner.jpeg"
+            src="assets/images/bitmoji.png"
             alt="Puja Lakhe"
             width="80"
             (click)="openImage()"
@@ -17,7 +17,7 @@
         <div class="info-content">
           <h1 class="name" title="Puja Lakhe">Puja Lakhe</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Frontend developer</p>
         </div>
 
         <button class="info_more-btn" (click)="toggleContacts()">
@@ -27,9 +27,7 @@
         </button>
       </div>
 
-      <div
-        class="sidebar-info_more"
-      >
+      <div class="sidebar-info_more">
         <div class="separator"></div>
 
         <ul class="contacts-list">
