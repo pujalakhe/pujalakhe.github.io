@@ -18,8 +18,6 @@ export class AppComponent {
   }
 
   toggleContacts() {
-    console.log(this.showContacts);
-
     this.showContacts = !this.showContacts;
   }
 }

@@ -58,13 +58,13 @@ export class PortfolioComponent {
       preview_link: '',
       repo_link: `${this.baseUrl}Angular-Google-Authentication/`,
     },
-    {
-      title: '',
-      category: '',
-      image: '',
-      preview_link: '',
-      repo_link: ``,
-    },
+    // {
+    //   title: '',
+    //   category: '',
+    //   image: '',
+    //   preview_link: '',
+    //   repo_link: ``,
+    // },
   ];
 
   get filteredProjects() {
