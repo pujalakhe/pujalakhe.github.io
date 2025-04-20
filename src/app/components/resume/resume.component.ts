@@ -42,6 +42,6 @@ export class ResumeComponent {
   ];
 
   downloadCV() {
-    window.open('assets/images/PUJA-LAKHE.pdf', '_blank');
+    window.open('assets/images/pujalakhe-blue.pdf', '_blank');
   }
 }

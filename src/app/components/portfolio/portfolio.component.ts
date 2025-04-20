@@ -48,7 +48,8 @@ export class PortfolioComponent {
       title: 'Crud Operation - Angular',
       category: '',
       image: 'assets/projects/angular-crud.png',
-      preview_link: '',
+      preview_link:
+        'https://angular-crud-2lra9dedz-pujalakhes-projects.vercel.app/',
       repo_link: `${this.baseUrl}Angular-CRUD`,
     },
     {
